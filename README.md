@@ -102,9 +102,8 @@ Linux: ~/.config/Nitrox/Server/
 
 ### 🎮 **Multiplayer Compatibility**
 
-- All players should use the same cleaned savegame
 - Restart server after cleanup
-- Clients must reconnect
+
 
 ### 📁 **Supported Files**
 
