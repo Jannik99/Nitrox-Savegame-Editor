@@ -62,10 +62,7 @@ ehthumbs.db
 Thumbs.db
 
 # Savegame files
-EntityData.json
-EntityData_old.json
-EntityData_cleaned.json
-EntityData_backup_*.json
+*.json
 
 # Logs
 *.log
