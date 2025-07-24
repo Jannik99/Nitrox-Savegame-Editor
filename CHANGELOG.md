@@ -1,32 +1,32 @@
 # Changelog
 
-Alle wichtigen Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
+All notable changes to this project will be documented in this file.
 
-Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
-und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.0.0] - 2025-07-24
 
-### Hinzugefügt
-- 🎉 Erste vollständige Version des Nitrox Savegame Cleaners
-- 🔍 Spezifische Suchfunktionen für Mesmer, Rockgrub und benutzerdefinierte Begriffe
-- 🐟 Performance-Cleanup-Optionen (Fische, 'None' Types, Pflanzen)
-- 📍 Positions-basierte Filter (Tiefe, Distanz, Startbereich)
-- 📊 Detaillierte Analyse-Tools und Statistiken
-- 💾 Automatische JSON-Komprimierung
-- 🛡️ Sichere Backup-Funktionalität
-- 🎨 Benutzerfreundliches Konsolen-Interface mit 15 Optionen
-- 📈 Performance-Metriken und Fortschrittsanzeigen
+### Added
+- 🎉 First complete version of the Nitrox Savegame Cleaner
+- 🔍 Specific search functions for Mesmer, Rockgrub and custom terms
+- 🐟 Performance cleanup options (fish, 'None' types, plants)
+- 📍 Position-based filters (depth, distance, spawn area)
+- 📊 Detailed analysis tools and statistics
+- 💾 Automatic JSON compression
+- 🛡️ Safe backup functionality
+- 🎨 User-friendly console interface with 15 options
+- 📈 Performance metrics and progress indicators
 
-### Technische Details
-- Unterstützung für Nitrox EntityData.json Format
-- Rekursive Suchfunktionen für komplexe JSON-Strukturen
-- Positions-basierte Filterung mit mathematischen Berechnungen
-- Speicher-effiziente Verarbeitung großer Savegames (300,000+ Entities)
-- Cross-Platform Kompatibilität (Windows, macOS, Linux)
+### Technical Details
+- Support for Nitrox EntityData.json format
+- Recursive search functions for complex JSON structures
+- Position-based filtering with mathematical calculations
+- Memory-efficient processing of large savegames (300,000+ entities)
+- Cross-platform compatibility (Windows, macOS, Linux)
 
-### Dokumentation
-- Vollständige README.md mit Installationsanleitung
-- MIT Lizenz für Open-Source-Verwendung
-- Detaillierte Benutzungshinweise
-- Sicherheitsrichtlinien für Multiplayer-Umgebungen
+### Documentation
+- Complete README.md with installation guide
+- MIT license for open-source usage
+- Detailed usage instructions
+- Security guidelines for multiplayer environments
