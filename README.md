@@ -92,12 +92,6 @@ Linux: ~/.config/Nitrox/Server/
 - **After**: 150,000 entities, 25 MB file size
 - **Improvement**: 50% fewer entities, 50% smaller file
 
-### Recommended Cleanup:
-
-1. **Remove 'None' TechTypes** → Instant 25% reduction
-2. **Remove all fish** → Additional 10% reduction
-3. **Remove plants/resources** → Extra 15% reduction
-
 ## ⚠️ Important Notes
 
 ### 🔒 **Safety**
@@ -135,8 +129,6 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 ## 🙏 Acknowledgments
 
 - [Subnautica Nitrox Team](https://github.com/SubnauticaNitrox/Nitrox) for the fantastic multiplayer mod
-
-## 📞 Support
 
 ---
 
