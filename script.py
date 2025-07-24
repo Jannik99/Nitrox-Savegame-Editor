@@ -207,9 +207,9 @@ if "Entities" in data:
 
         exit()
 
-    # Normale Filterung
+    # Normal filtering
     if isinstance(entities, dict):
-        print(f"Anzahl Entities im Savegame: {len(entities)}")
+        print(f"Number of entities in savegame: {len(entities)}")
 
         filtered_entities = {}
         removed_count = 0
@@ -226,23 +226,23 @@ if "Entities" in data:
 
             if should_remove:
                 removed_count += 1
-                if removed_count <= 10:  # Zeige nur erste 10 entfernte Einträge
+                if removed_count <= 10:  # Show only first 10 removed entries
                     tech_type = entity_data.get("TechType", "Unknown") if isinstance(
                         entity_data, dict) else "Unknown"
                     print(
-                        f"Entferne {description} Entity: {entity_id} (TechType: {tech_type})")
+                        f"Removing {description} entity: {entity_id} (TechType: {tech_type})")
             else:
                 filtered_entities[entity_id] = entity_data
 
-        # Behalte die ursprüngliche Savegame-Struktur bei, ersetze nur die Entities
+        # Keep the original savegame structure, replace only the entities
         filtered_data = data.copy()
         filtered_data["Entities"] = filtered_entities
 
-        print(f"✅ Entfernt: {removed_count:,} {description}-Entities")
-        print(f"✅ Verbleibend: {len(filtered_entities):,} Entities")
+        print(f"✅ Removed: {removed_count:,} {description} entities")
+        print(f"✅ Remaining: {len(filtered_entities):,} entities")
 
     elif isinstance(entities, list):
-        print(f"Entities ist eine Liste mit {len(entities):,} Einträgen")
+        print(f"Entities is a list with {len(entities):,} entries")
 
         filtered_entities = []
         removed_count = 0
@@ -263,35 +263,35 @@ if "Entities" in data:
                     tech_type = entity_data.get("TechType", "Unknown") if isinstance(
                         entity_data, dict) else "Unknown"
                     print(
-                        f"Entferne {description} Entity an Index: {i} (TechType: {tech_type})")
+                        f"Removing {description} entity at index: {i} (TechType: {tech_type})")
             else:
                 filtered_entities.append(entity_data)
 
         filtered_data = data.copy()
         filtered_data["Entities"] = filtered_entities
 
-        print(f"✅ Entfernt: {removed_count:,} {description}-Entities")
-        print(f"✅ Verbleibend: {len(filtered_entities):,} Entities")
+        print(f"✅ Removed: {removed_count:,} {description} entities")
+        print(f"✅ Remaining: {len(filtered_entities):,} entities")
 
-        # Zeige Größenvergleich
+        # Show size comparison
         original_size = os.path.getsize("EntityData.json")
         reduction_percent = (removed_count / len(entities)) * 100
-        print(f"📊 Reduzierung: {reduction_percent:.1f}% der Entities entfernt")
+        print(f"📊 Reduction: {reduction_percent:.1f}% of entities removed")
 
     else:
-        print(f"❌ Unbekannter Entities-Typ: {type(entities)}")
-        filtered_data = data  # Keine Änderungen
+        print(f"❌ Unknown entities type: {type(entities)}")
+        filtered_data = data  # No changes
 
-    # Speichere das bereinigte Savegame
+    # Save the cleaned savegame
     with open("EntityData_cleaned.json", "w", encoding="utf-8") as f:
         json.dump(filtered_data, f, separators=(',', ':'))
 
-    print("✅ Bereinigtes Savegame gespeichert als 'EntityData_cleaned.json' (komprimiert)")
+    print("✅ Cleaned savegame saved as 'EntityData_cleaned.json' (compressed)")
 
 else:
-    print("❌ Keine 'Entities' im Savegame gefunden")
-    filtered_data = data  # Keine Änderungen
+    print("❌ No 'Entities' found in savegame")
+    filtered_data = data  # No changes
 
-# Speichere immer eine komprimierte Version
+# Always save a compressed version
 with open("EntityData_cleaned.json", "w", encoding="utf-8") as f:
     json.dump(filtered_data, f, separators=(',', ':'))
