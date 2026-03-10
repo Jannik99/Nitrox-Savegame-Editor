@@ -1,6 +1,6 @@
 # 🌊 Subnautica Nitrox Savegame Cleaner
 
-A powerful Python tool for cleaning and optimizing [Subnautica Nitrox](https://github.com/SubnauticaNitrox/Nitrox) multiplayer savegames.
+A Python tool for cleaning and optimizing [Subnautica Nitrox](https://github.com/SubnauticaNitrox/Nitrox) multiplayer savegames.
 
 ![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
