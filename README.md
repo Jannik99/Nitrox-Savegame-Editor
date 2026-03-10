@@ -16,8 +16,9 @@ A powerful Python tool for cleaning and optimizing [Subnautica Nitrox](https://g
 
 ### 🐟 **Performance Cleanup**
 
-- Remove **77,970+ 'None' Entities** for instant performance improvement
-- Remove all fish (30,000+ entities)
+- Remove **None Entities** for instant performance improvement
+- Remove all fish
+- Remove some fish
 - Clean up plants and resources
 - Optimize large quantity objects
 
